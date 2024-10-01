@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Empleado(ABC):
+class EmpleadoA_34(ABC):
     def __init__(self, rfc, apellidos, nombres):
         self._rfc = rfc
         self._apellidos = apellidos
@@ -11,7 +11,7 @@ class Empleado(ABC):
     @abstractmethod
     def ingresos(self):
         pass
-class EmpleadoVendedor(Empleado):
+class EmpleadoVendedorA_34(Empleado):
     def __init__(self, rfc, apellidos, nombres, monto_vendido, tasa_comision):
         super().__init__(rfc, apellidos, nombres)
         self.monto_vendido = monto_vendido
